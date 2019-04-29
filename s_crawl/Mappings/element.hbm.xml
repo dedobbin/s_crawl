@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="_crawl0" namespace="_crawl0.Domain">
+  <class name="Element" table="elements">
+    <id name="id">
+      <generator class="identity" />
+    </id>
+    <property name="elementId" type="String" column="element_id"/>
+    <property name="tagName" type="String" column="tag_name" not-null="true"/>
+    <property name="x" type="integer" not-null="true"/>
+    <property name="y" type="integer" not-null="true"/>
+    <property name="w" type="integer" not-null="true"/>
+    <property name="h" type="integer" not-null="true"/>
+    <property name="depth" type="integer" not-null="true"/>
+    <many-to-one name="page" class="Page" column="page_id"/>
+    <set name="elements"  table="elements" cascade="all-delete-orphan">
+      <key column="parent_id"/>
+      <one-to-many class="Element"/>
+    </set>
+  </class>
+</hibernate-mapping>
+

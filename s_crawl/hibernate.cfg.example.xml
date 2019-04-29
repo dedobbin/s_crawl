@@ -1,0 +1,23 @@
+﻿<?xml version = "1.0" encoding = "utf-8"?>
+<configuration>
+  <configSections>
+    <section name="hibernate-configuration" type="NHibernate.Cfg.ConfigurationSectionHandler, NHibernate"/>
+  </configSections>
+  <hibernate-configuration>
+    <session-factory xmlns="urn:nhibernate-configuration-2.2">
+      <!-- properties -->
+      <property name="connection.provider">
+        NHibernate.Connection.DriverConnectionProvider
+      </property>
+      <property name="connection.driver_class">
+        NHibernate.Driver.MySqlDataDriver
+      </property>
+      <property name="connection.connection_string">
+        Server=localhost;Database=s_crawl;User ID=admin;Password=pw;
+      </property>
+      <property name="dialect">
+        NHibernate.Dialect.MySQLDialect
+      </property>
+    </session-factory>
+  </hibernate-configuration>
+</configuration>

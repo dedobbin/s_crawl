@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "s_crawl", "s_crawl\s_crawl.csproj", "{6E376F62-9515-44A1-B177-028D7374CBE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E376F62-9515-44A1-B177-028D7374CBE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E376F62-9515-44A1-B177-028D7374CBE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E376F62-9515-44A1-B177-028D7374CBE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E376F62-9515-44A1-B177-028D7374CBE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22E05E1C-6EDB-4BFF-A2DC-19EA7B37AEE8}
+	EndGlobalSection
+EndGlobal
